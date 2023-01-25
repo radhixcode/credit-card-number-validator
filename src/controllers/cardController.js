@@ -43,8 +43,9 @@ exports.addCreditCard = (req, res, next) => {
           return callback(exceptions.forbiddenException("invalid card number"));
         }
       },
-      // If a new card set balance to 0 and add new card
+      // If new card set balance to 0
       (callback) => {
+        console.log(req.body.card_number)
         const index = creditCardData.creditCards.findIndex(
           (c) => c.card_number == req.body.card_number
         );

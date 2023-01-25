@@ -7,7 +7,12 @@ router.get("/", (req, res, next) => {
   res.send("Welcome to your bank");
 });
 
-// All request related to credit card (stard with '/credit-card').
+// All request related to credit card (start with '/credit-card').
 router.use("/credit-card", creditCardRoutes);
+
+// Invalid GET requests.
+router.get("*", (req, res, next) => {
+  res.send("Page not found");
+});
 
 module.exports = router;
