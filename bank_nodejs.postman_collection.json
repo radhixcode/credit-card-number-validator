@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "496d06f5-7656-4f19-a551-062bd26f41a7",
+		"name": "bank_nodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25083083"
+	},
+	"item": [
+		{
+			"name": "/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/credit-card/getall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/credit-card/getall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"credit-card",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/credit-card/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"card_holder_name\" : \"anna\",\n    \"card_number\" : 3333444411112222,\n    \"card_limit\" : 2000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/credit-card/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"credit-card",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
