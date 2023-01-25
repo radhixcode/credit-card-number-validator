@@ -35,10 +35,9 @@ exports.addCreditCard = (req, res, next) => {
         }
         return callback(null);
       },
-      // Validation of the creditcard number
+      // Validation of the credit card number
       (callback) => {
-        return callback(null);
-        if (checkCardNumber.validateCardNumber(11122)) {
+        if (checkCardNumber.validateCardNumber(req.body.card_number)) {
           return callback(null);
         } else {
           return callback(exceptions.forbiddenException("invalid card number"));
