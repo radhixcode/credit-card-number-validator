@@ -1,8 +1,9 @@
 const express = require("express");
 const request = require("supertest");
-const cardController = require("../../src/controllers/cardController");
+const router = require("../src/routes/routes");
 
 const app = new express();
+app.use("/", router);
 
 describe("Base route test", () => {
   test("1. GET / - 200 response", async () => {

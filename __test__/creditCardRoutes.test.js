@@ -1,6 +1,6 @@
 const express = require("express");
 const request = require("supertest");
-const router = require("../../src/routes/routes");
+const router = require("../src/routes/routes");
 const bodyParser = require("body-parser");
 const app = new express();
 
