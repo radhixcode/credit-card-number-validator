@@ -1,4 +1,4 @@
-# Create new project with jest tdd
+# Run Node server project locally
 
 * Run the command `npm install` to download the required dependencies.
 * Run web server using `node app.js` command
