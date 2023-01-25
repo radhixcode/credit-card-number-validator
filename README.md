@@ -7,7 +7,10 @@
 * Visit `http://localhost:3001` address on browser.
 
 ## Testing
-* Unit testing `npm test <filename>` to run any individual test file, OR `npm test` check entire suit
+* Unit testing  `npm test` check entire suit OR `npm test <filename>` to run any individual test file
+    eg:
+    `npm test validateCardNumber` 
+    `npm test creditCardRoutes` 
 
 * Postman collecton `bank_nodejs.postman_collection.json` in the repo
 
@@ -15,13 +18,11 @@
     * `GET http://localhost:3001/credit-card/getall`
     * `POST http://localhost:3001/credit-card/add`
     body:
-    ```
-    {
+    ```{
         "card_holder_name" : "anna",
         "card_number" : 377261620324999,
         "card_limit" : 2000
-    }
-    ```
+    }```
 
 * cURL commands
 ```
