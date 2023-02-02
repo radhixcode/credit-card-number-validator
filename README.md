@@ -7,7 +7,7 @@
 * Visit `http://localhost:3001` address on browser.
 
 ## Testing
-* Unit testing  `npm test` check entire suit OR `npm test <filename>` to run any individual test file. Eg:
+* `npm test` check entire suit OR `npm test <filename>` to run any individual test file. Eg:
     <br />`npm test validateCardNumber` 
     <br />`npm test creditCardRoutes` 
 
